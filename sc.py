@@ -10,7 +10,6 @@ try:
 	soup = BeautifulSoup(connection, 'html.parser')
 
 	for link in soup.find_all('a'):
-		if validators.url(link.get('href')) == True:
 			print(link.get('href'))
 
 except urllib.error.URLError as e:
