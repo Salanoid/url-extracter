@@ -1,6 +1,5 @@
 import urllib
 from bs4 import BeautifulSoup
-import validators
 
 print('Add website: ')
 s = input()
